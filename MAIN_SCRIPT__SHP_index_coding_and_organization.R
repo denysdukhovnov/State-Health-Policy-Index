@@ -298,7 +298,7 @@ saveRDS(I.score.wgt %>%
           mutate(I.score.10yr.lag.Z = scale(I.score.10yr.lag)) %>% 
           ungroup() %>% 
           filter(year >= 1990), 
-        file = "I_score_w_wgts.rds")
+        file = "I_score_wgt.rds")
 
 # Repeat for the unweighted score
 saveRDS(I.score.unwgt %>%
